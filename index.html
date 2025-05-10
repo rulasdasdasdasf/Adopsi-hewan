@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adopsi Hewan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Selamat Datang di Website Adopsi Hewan</h1>
+    <p>Temukan sahabat barumu hari ini!</p>
+  </header>
+  <nav>
+    <a href="#hewan">Daftar Hewan</a>
+    <a href="#formulir">Formulir Adopsi</a>
+    <a href="#kontak">Kontak</a>
+  </nav>  <div class="container" id="hewan">
+    <h2>Hewan yang Tersedia</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="https://placekitten.com/300/200" alt="Kucing">
+        <h3>Meow</h3>
+        <p>Kucing manis berumur 2 tahun, suka bermain dan ramah anak.</p>
+      </div>
+      <div class="card">
+        <img src="https://placedog.net/300/200?id=1" alt="Anjing">
+        <h3>Doggy</h3>
+        <p>Anjing setia berumur 3 tahun, sangat aktif dan suka jalan-jalan.</p>
+      </div>
+    </div>
+  </div>  <div class="container" id="formulir">
+    <h2>Formulir Adopsi</h2>
+    <form>
+      <label>Nama Lengkap:</label>
+      <input type="text" required><label>Email:</label>
+  <input type="email" required>
+
+  <label>Hewan yang ingin diadopsi:</label>
+  <input type="text" required>
+
+  <label>Alasan mengadopsi:</label>
+  <textarea rows="4" required></textarea>
+
+  <button type="submit">Kirim</button>
+</form>
+
+  </div>  <div class="container" id="kontak">
+    <h2>Kontak</h2>
+    <p>Email: adopsi@hewan.com</p>
+    <p>Instagram: @adopsihewan.id</p>
+  </div>
+</body>
+</html>
